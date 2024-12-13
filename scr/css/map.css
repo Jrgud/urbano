@@ -1,0 +1,61 @@
+#defaultLayout:has(#mapRuteo) { 
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    /* //Prueba final */
+  }
+
+  .mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+.mapboxgl-ctrl-attrib {
+    display: none !important;
+}
+.mapboxgl-popup{
+  max-width: 800px !important;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+#map-container {
+  height: 100vh;
+  width: 100%; 
+  margin: 0; 
+  padding: 0;
+  position: relative; 
+  overflow: hidden; 
+} 
+
+body {
+  overflow: hidden;
+}
+
+
+div[ref='mapContainerRef'] {
+  height: 100%;
+  width: 100%;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+} 

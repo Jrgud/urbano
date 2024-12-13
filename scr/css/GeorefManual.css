@@ -1,0 +1,14 @@
+/* Estilo para sombrear la columna completa */
+.hover-column {
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-column:hover {
+    background-color: rgba(128, 128, 128, 0.2); /* Color gris claro para el sombreado */
+  }
+  
+  /* Aplicar el hover a cada celda que comparte la clase */
+  .hover-column:hover ~ .hover-column {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  
